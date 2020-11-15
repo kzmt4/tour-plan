@@ -13,3 +13,5 @@ Tour Plan
 Александр Ярославцев.
 
 https://kzmt4.github.io/tour-plan/
+
+https://github.com/kzmt4/tour-plan/blob/main/index.html
