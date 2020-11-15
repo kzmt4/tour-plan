@@ -11,3 +11,5 @@ Tour Plan
 Куратор
 
 Александр Ярославцев.
+
+https://kzmt4.github.io/tour-plan/
