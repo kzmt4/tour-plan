@@ -364,6 +364,10 @@ input::-webkit-input-placeholder {
   color: #333333;
 }
 
+input::-moz-placeholder {
+  color: #333333;
+}
+
 input:-ms-input-placeholder {
   color: #333333;
 }
@@ -376,11 +380,11 @@ input::placeholder {
   color: #333333;
 }
 
-.header {
+.navbar {
   background-color: #fff;
 }
 
-.header-top {
+.navbar-top {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -397,7 +401,7 @@ input::placeholder {
   padding-bottom: 40px;
 }
 
-.header__search {
+.navbar__search {
   margin-right: auto;
   margin-left: 108px;
 }
@@ -475,4 +479,3 @@ input::placeholder {
   display: -ms-flexbox;
   display: flex;
 }
-/*# sourceMappingURL=style.css.map */
