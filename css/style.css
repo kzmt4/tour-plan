@@ -536,9 +536,6 @@ img {
   .navbar__search {
     margin-left: auto;
   }
-  .navbar__link {
-    font-size: 12px;
-  }
   .search__input {
     width: 340px;
   }
@@ -551,6 +548,12 @@ img {
   .container {
     max-width: 700px;
     width: 92%;
+  }
+  .navbar-menu {
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .navbar-menu__link {
     font-weight: bold;
@@ -606,5 +609,8 @@ img {
 @media (max-width: 450px) {
   .logo {
     width: 100px;
+  }
+  .container {
+    max-width: 280px;
   }
 }
