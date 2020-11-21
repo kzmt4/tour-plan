@@ -562,7 +562,7 @@ img {
   }
 }
 
-@media (max-width: 648px) {
+@media (max-width: 767px) {
   .navbar-user {
     display: none;
   }
