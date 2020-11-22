@@ -26,12 +26,17 @@
         width: 92%
     .navbar
         &-menu
-            justify-content: space-evenly
+            justify-content: space-around
             &__link    
                 font-weight: bold
                 font-size: 12px
-                line-height: 15px            
-        
+                line-height: 15px
+        &__search
+            margin-left: 48px    
+                        
+    .stars
+        &-img
+            margin-right: -2px    
 
     
     
@@ -78,8 +83,12 @@
                 background-color: $text-color
 
                
-@media (max-width: 450px)   
+@media (max-width: 450px)  
+    .hotel
+        padding-top: 0 
     .logo 
         width: 100px    
     .container
         max-width: 280px
+    .stars
+        margin-right: 17px    
