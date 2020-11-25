@@ -1,9 +1,16 @@
 @media (max-width: 1200px)
     .container
         max-width: 960px
+    .slider
+        width: 590px
+    .swiper
+        &-slide
+            &__img
+                height: 100% 
+                object-fit: cover       
 @media (max-width: 992px)
     .container
-        max-width: 760px
+        max-width: 700px
     .navbar
         &-bottom
             padding-top: 22px
@@ -13,12 +20,37 @@
             
         &__search
             margin-left: auto
-        
+    
+        &-menu
+            justify-content: space-around
+            &__link    
+                font-weight: bold
+                font-size: 12px
+                line-height: 15px
+        &__search
+            margin-left: 48px        
         
     .search__input
          width: 340px           
     .logo
-        width: 133px                    
+        width: 133px  
+    .hotel
+        &-grid 
+            flex-direction: column
+        &__slider    
+            margin-bottom: 30px
+        &__right-bar
+            flex-direction: row    
+    .slider
+        width: 100%   
+    .swiper
+        &-slide
+            &__img
+                width: 100%   
+    .booking
+        width: 340px
+    .map
+        width: 340px                      
 @media ( max-width: 810px)
 
     .container
@@ -34,9 +66,8 @@
         &__search
             margin-left: 48px    
                         
-    .stars
-        &-img
-              
+    .slider
+        
 
     
     
@@ -82,14 +113,45 @@
                 height: 1px
                 background-color: $text-color
 
-               
+@media ( max-width: 576px) 
+    .hotel
+        padding-top: 0 
+       
+        &__right-bar
+            flex-direction: column
+            min-height: 450px
+    .booking
+        width: 100%
+    .map
+        width: 100%                          
 @media (max-width: 450px)  
     .hotel
         padding-top: 0 
+        &-info
+           padding-bottom: 38px
+        &__right-bar
+            flex-direction: column 
+            min-height: 402px  
+            justify-content: space-between
+        &__slider
+            margin-bottom: 20px 
     .logo 
         width: 100px    
     .container
         max-width: 280px
     .stars
         margin-right: 14px 
-           
+    .slider
+        width: 279px
+        height: 179px    
+    .booking
+        width: 100%
+        height: 210px
+        padding: 29px 22px 26px 22px
+        &__info
+            margin-bottom: 5px
+    .map
+        width: 100% 
+        height: 173px
+    .gmnoprint 
+        margin-bottom: 123px    
