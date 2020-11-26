@@ -1054,6 +1054,12 @@ img {
     height: 1px;
     background-color: #333333;
   }
+  .booking {
+    width: 48%;
+  }
+  .map {
+    width: 49%;
+  }
 }
 
 @media (max-width: 576px) {
