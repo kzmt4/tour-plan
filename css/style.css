@@ -1123,15 +1123,15 @@ img {
     width: 279px;
     height: 179px;
   }
+  .slider-button {
+    -webkit-background-size: 4px 4px;
+            background-size: 4px;
+  }
   .slider-button--prev {
-    width: 11px;
-    height: 11px;
-    left: 6.12px;
+    left: -2px;
   }
   .slider-button--next {
-    width: 11px;
-    height: 11px;
-    right: 7px;
+    right: -2px;
   }
   .booking {
     width: 100%;
