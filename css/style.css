@@ -819,7 +819,7 @@ img {
   line-height: 25px;
 }
 
-.booking__call-centr {
+.booking__call-centre {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -874,11 +874,17 @@ img {
 }
 
 .map {
-  width: 347px;
+  width: 100%;
   height: 213px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   overflow: hidden;
+}
+
+.map__iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 @media (max-width: 1200px) {
@@ -1054,6 +1060,12 @@ img {
     height: 1px;
     background-color: #333333;
   }
+  .booking {
+    width: 48%;
+  }
+  .map {
+    width: 48%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1111,6 +1123,16 @@ img {
     width: 279px;
     height: 179px;
   }
+  .slider-button--prev {
+    width: 11px;
+    height: 11px;
+    left: 6.12px;
+  }
+  .slider-button--next {
+    width: 11px;
+    height: 11px;
+    right: 7px;
+  }
   .booking {
     width: 100%;
     height: 210px;
@@ -1122,8 +1144,5 @@ img {
   .map {
     width: 100%;
     height: 173px;
-  }
-  .gmnoprint {
-    margin-bottom: 123px;
   }
 }
