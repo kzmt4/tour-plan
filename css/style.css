@@ -867,6 +867,10 @@ img {
   font-size: 14px;
   line-height: 19px;
   color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .map {
@@ -977,11 +981,15 @@ img {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
-  min-width: 65px;
+  width: 65px;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .reviews {
@@ -1133,6 +1141,8 @@ img {
   /* or 19px */
   max-width: 537px;
   text-align: justify;
+  height: 114px;
+  overflow-y: auto;
 }
 
 @media (max-width: 1200px) {
@@ -1475,7 +1485,8 @@ img {
     font-size: 18px;
     line-height: 23px;
     text-align: center;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
+    max-width: 245px;
   }
   .reviews-slider__button {
     top: 52px;

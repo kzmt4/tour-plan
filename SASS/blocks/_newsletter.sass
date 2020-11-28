@@ -60,8 +60,12 @@
         border: none
         background-color: $primary      
         color: $light
-        min-width: 65px 
+        width: 65px 
         font-style: normal
         font-weight: bold
         font-size: 12px
-        line-height: 15px   
+        line-height: 15px 
+        overflow: hidden     //чтобы кнопка не переполнялась задать фисированную ширину и эти три свойства
+        white-space: nowrap                                  
+        text-overflow: ellipsis
+        
