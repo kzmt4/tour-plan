@@ -1,4 +1,5 @@
 @media (max-width: 1200px)
+
     .container
         max-width: 960px
     .hotel
@@ -9,7 +10,10 @@
         &-slide
             &__img
                 height: 100% 
-                object-fit: cover       
+                object-fit: cover  
+    .card
+        width: 230px
+        height: 230px                     
 @media (max-width: 992px)
     .container,
     .newsletter-container
@@ -56,8 +60,15 @@
     .booking
         width: 340px
     .map
-        width: 340px  
-                        
+        width: 340px 
+    .activities
+        &-wrapper
+            flex-wrap: wrap 
+        &__card
+            margin-bottom: 20px        
+    .card
+        width: 340px
+        height: 255px                    
 @media ( max-width: 810px)
     
     .container
@@ -93,6 +104,8 @@
                 &--next
                     right: -8px
                     top: 52%    
+            &__text 
+                height: 129px           
         &__title
             font-style: normal
             font-weight: bold
@@ -150,6 +163,9 @@
             flex-direction: column                
         &__title
             margin-bottom: 40px
+    .card
+        width: 48%
+        height: 40vw         
 @media ( max-width: 576px) 
     .hotel
         padding-top: 0 
@@ -165,7 +181,15 @@
         &__title
             width: 390px
             margin-left: auto
-            margin-right: auto                             
+            margin-right: auto 
+    .activities
+        &-wrapper
+            flex-direction: column
+            align-items: center        
+    .card
+        max-width: 510px
+        height: 255px
+        width: 100%                                    
 @media (max-width: 450px)  
     .hotel
         padding-top: 0 
@@ -245,3 +269,16 @@
             &__item
                 padding: 0px 31px 36px 
                 height: 440px      
+    .activities
+        padding-top: 19px
+        &-wrapper
+            flex-direction: column
+        &-title
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px 
+            margin-bottom: 36px   
+    .card 
+        width: 100%
+        height: 255px        

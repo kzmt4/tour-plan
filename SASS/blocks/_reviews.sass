@@ -59,7 +59,7 @@
             flex-direction: column
             align-items: center
             margin-top: -45px
-            margin-bottom: 30px
+            margin-bottom: 32px
         &__ava
             width: 90px
             height: 90px
@@ -87,8 +87,11 @@
             font-weight: normal
             font-size: 12px
             line-height: 160%
-            /* or 19px */
+            
             max-width: 537px   
             text-align: justify 
-            height: 114px
-            overflow-y: auto         
+            height: 114px          // добавляем тексту высоту и overflow-y, 
+            overflow-y: auto       // чтобы появился вертикальный скролл,
+                                   // чтоб текст не растягивал блок слайдера                     
+                     
+            
