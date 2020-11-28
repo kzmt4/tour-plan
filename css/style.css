@@ -990,6 +990,7 @@ img {
   white-space: nowrap;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
+  padding: 5px;
 }
 
 .reviews {
@@ -1390,6 +1391,11 @@ img {
   .map {
     width: 100%;
   }
+  .reviews__title {
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1488,6 +1494,9 @@ img {
     margin: 0 auto 40px;
     max-width: 245px;
   }
+  .reviews-slider__text {
+    height: 265px;
+  }
   .reviews-slider__button {
     top: 52px;
   }
@@ -1499,5 +1508,6 @@ img {
   }
   .reviews-slider__item {
     padding: 0px 31px 36px;
+    height: 440px;
   }
 }
