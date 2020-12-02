@@ -21,7 +21,7 @@
                     <img class="logo_image" src="img/logo-navbar.svg" alt="Logo: Best Tour Plan">
                 </a>
                 <form action="#" class="search navbar__search">
-                    <input type="text" class="search__input" placeholder="search Location">
+                    <input type="text" class="search__input" placeholder="Search Location">
                     <button class="search__button">
                         <img src="img/search.svg" alt="Icon: search" class="search__img">
                     </button>
@@ -420,18 +420,32 @@
                             <div class="footer__icon-wrapper">
                                 <img class="footer__icon" src="img/footer-phone.svg" alt="icon: Phone">
                             </div>
+                            <div class="footer__numbers">
+                                
+                                    <a href="tel:2691500" class="footer__link"> Tel (business hours) : 269 1500</a> <br>
+                                
+                                
+                                    <a href="tel:52-56-61-38" class="footer__link">Tel (hotline) Monday - Saturday: 52&#8209;56&#8209;61&#8209;38 (08:00 am – 20:00 pm)</a> <br>
+                               
+                                
+                                    <a href="tel:52-56-61-38" class="footer__link">Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a>
+                              
+                            </div>
+                        </li>     
+                              
+                             
                             
-                            Tel (business hours) : 269 1500 <br>
-                            Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-                            Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                             
+                            
 
-                        </li>
-                        <li class="footer__item footer__item--mb-2">
-                            <div class="footer__icon-wrapper">
+                        
+                        <li class="footer__item footer__item--mb-2 footer__item--mail-flex">
+                            <div class="footer__icon-wrapper footer__icon-wrapper--mail-flex">
+
                                 <img class="footer__icon" src="img/mail-icon.svg" alt="mail"> 
                             </div>
-                           
-                            cherly.lawson@example.com
+                           <a href="mailto:cherly.lawson@example.com" class="footer__link">cherly.lawson@example.com</a>
+                            
                         </li>
                     </ul>
                 </div>
@@ -439,17 +453,29 @@
                     <h3 class="footer__title footer__title--mb-input">
                         Send us a message
                     </h3>
-                        <form action="" class="footer__form">
+                        <form class="footer__form">
                             <input type="text" class="input footer__input" placeholder="Your Full Name*">
                             <input type="text" class="input footer__input" placeholder="Phone Number*">
-                            <textarea name="" id="" cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
-                            <button class="button footer__button">Send</button>
-                            <div class="footer__info">* Required Fields</div>
+                            <textarea class="footer__message" placeholder="Message"></textarea>
+                            <div class="footer__form footer__form--button-flex"> 
+
+                                <button class="button footer__button">Send</button>
+                                <div class="footer__info">* Required Fields</div>
+                            </div> 
+                            
                         </form>
                    
                 </div>
             </div>
              <!--./footer-wrapper  -->
+            <div class="privacy-policy">
+                <div class="privacy-policy__wrapper">
+                    <a href="#" class="privacy-policy__link">Disclaimer</a>
+                    <a href="#" class="privacy-policy__link">Conditions of use</a>
+                    <a href="#" class="privacy-policy__link">Cancellation policy</a>
+                </div>
+                <img src="img/pay-pal.png" alt="payment" class="privacy-policy__payment">
+            </div>     
         </div>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

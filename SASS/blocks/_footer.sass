@@ -8,7 +8,7 @@
         grid-template-columns: repeat(4, minmax(min-content, 1fr))
         grid-auto-rows: minmax(40px, min-content)
         align-items: start
-        grid-gap: 20px
+        // grid-gap: 20px
     &__logo
         grid-row: 1 / 3
         width: 166px
@@ -16,6 +16,9 @@
         margin-top: 27px
     &__categories
         grid-row: 1 / 4
+        margin-left: 8px
+    &__information
+        margin-left: 15px    
     &__social
         &-links
             display: flex
@@ -27,19 +30,29 @@
             grid-column: 3 / 5
             display: flex
             align-items: center
+            margin: 22px 0 0 15px
     &__legal
-        margin-left: 67px
+        margin-left: 83px
         
     &__contact
         &-details  
             grid-column: span 2 
+            margin-top: 58px
+            margin-left: -6px
         &-form
             grid-column: span 2 
+            margin: 59px 0 0 13px
     &__form
         display: flex
         align-items: center
         justify-content: space-between
-        flex-wrap: wrap                        
+        flex-wrap: wrap 
+        &--button-flex
+            display: flex
+            justify-content: space-between
+            width: 100%
+            align-items: center    
+
     &__title
         font-style: normal
         font-weight: bold
@@ -55,6 +68,8 @@
         &--mb-details
             margin-top: 15px
             margin-bottom: 27px
+    
+
     &__ul
         list-style: none
     &__item
@@ -67,16 +82,26 @@
         align-items: flex-start
         &--mb-2
             margin-bottom: 20px
+        &--mail-flex  
+            align-items: center  
     &__icon
        &-wrapper
         min-width: 40px
-        margin-right: 0px    
+        margin-right: 0px
+        margin-left: 8px
+        &--mail-flex
+            display: flex
+    
     &__link
         text-decoration: none
         color: inherit     
     &__text
         color: $footer-text-color
         margin-bottom: 22px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 160%
     &__input
         border-radius: 4px
         background-color: #fff
@@ -85,6 +110,13 @@
         height: 50px  
         margin-bottom: 15px
         flex-basis: 47%
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        &::placeholder
+            color: $footer-text-color
+            
     &__message
         border-radius: 4px
         background-color: #fff
@@ -94,8 +126,16 @@
         margin-bottom: 23px
         height: 123px
         width: 539px
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        &::placeholder
+            color: $footer-text-color
+            
     &__button
-        min-width: 160px    
+        width: 160px 
+        max-width: 100%   
         min-height: 50px
         padding: 18px
         font-style: normal
@@ -105,9 +145,32 @@
         border-radius: 4px
         background-color: $primary
         color: $light
+        overflow: hidden     
+        white-space: nowrap                                  
+        text-overflow: ellipsis
     &__info
         font-style: normal
         font-weight: bold
         font-size: 12px
         line-height: 15px  
         color: $footer-text-color  
+.privacy-policy
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 95px 0 46px 0
+    &__wrapper   
+        margin-right: 270px  
+        margin-left: auto   
+       
+    &__payment
+        width: 136px
+        height: 22px
+    &__link
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px 
+        color: $light
+        text-decoration: none  
+        margin-right: 8px     

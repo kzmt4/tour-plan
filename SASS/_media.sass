@@ -13,7 +13,10 @@
                 object-fit: cover  
     .card
         width: 230px
-        height: 230px                     
+        height: 230px     
+    .footer
+        &__input
+            flex-basis: 100%                    
 @media (max-width: 992px)
     .container,
     .newsletter-container
@@ -112,7 +115,63 @@
             font-size: 30px
             line-height: 38px
             margin-bottom: 52px
-    
+    .activities
+        padding-bottom: 49px        
+    .footer
+        padding-top: 73px
+        padding-bottom: 33px
+        &-wrapper
+            grid-template-columns: repeat(7, 1fr)
+            grid-row-gap: 40px
+        &__logo
+            grid-row: 1 / 2
+            grid-column: span 2
+            margin-top: 0
+            width: 100px
+        &__title
+            
+            &--mb-details 
+                margin-top: 25px
+                margin-bottom: 27px   
+        &__social
+            &-network
+                grid-row: 1 / 2 
+                grid-column: span 4 
+                align-self: center  
+                margin: 0 0 0 -13px          
+        &__categories
+            grid-row: 2 / 3
+            grid-column: span 2
+            margin: 0
+
+        &__information
+            grid-column: span 3 
+            margin: 0   
+        &__contact
+            &-details
+                grid-row: 3  
+                grid-column: span 7
+                margin-top: 0
+                margin-left: 0
+            &-form
+                grid-row: 4 
+                grid-column: span 6
+                padding-right: 60px  
+                margin: 0 
+
+
+        &__icon
+            &-wrapper
+                margin-left: 8px
+            
+            
+        &__input
+            flex-basis: 48%      
+        &__legal
+            grid-column: span 2    
+            margin-left: 0  
+    .privacy-policy
+        padding: 56px 0 0px 0        
 @media ( max-width: 767px)
     .navbar
         &-user
@@ -165,7 +224,76 @@
             margin-bottom: 40px
     .card
         width: 48%
-        height: 40vw         
+        height: 40vw 
+    .footer
+        padding-top: 66px
+        &__title
+            &--inline
+                margin: 0 0 21px 0
+            &--mb-details
+                margin-top: 4px
+                margin-bottom: 24px   
+            &--mb-input
+                margin-bottom: 15px     
+        &-wrapper
+            grid-template-columns: 1fr
+        &__logo
+            grid-row: 1
+            grid-column: 1
+        &__social
+            &-network
+                grid-row: 2
+                grid-column: 1
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                margin: 0 0 -11px 0
+        &__legal
+            grid-row: 3
+            grid-column: 1
+            margin-bottom: -10px
+
+
+        &__information
+            grid-row: 4 
+            grid-column: 1   
+            margin-bottom: -10px 
+        &__categories
+            grid-row: 5
+            grid-column: 1
+        
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+            &-form
+                grid-row: 7
+                grid-column: 1 
+                padding: 0 
+        &__form
+            &--button-flex
+                flex-direction: column
+                align-items: flex-start 
+        &__info
+            order: -1
+            margin: -8px 0 15px 0                
+        &__input
+            flex-basis: 100%
+        &__message
+            width: 100% 
+        &__icon
+            &-wrapper
+                margin-left: 3px
+                margin-right: -10px 
+    .privacy-policy
+        flex-direction: column
+        align-items: flex-start
+        padding-top: 26px
+        &__wrapper
+            margin: 0 0 10px 0
+        &__link
+            margin-right: 4px      
+
 @media ( max-width: 576px) 
     .hotel
         padding-top: 0 
@@ -189,7 +317,8 @@
     .card
         max-width: 510px
         height: 255px
-        width: 100%                                    
+        width: 100%   
+                                                                                             
 @media (max-width: 450px)  
     .hotel
         padding-top: 0 
@@ -270,7 +399,7 @@
                 padding: 0px 31px 36px 
                 height: 440px      
     .activities
-        padding-top: 19px
+        padding: 19px 0 40px 0
         &-wrapper
             flex-direction: column
         &-title
