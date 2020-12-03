@@ -78,6 +78,8 @@
         max-width: 700px 
         width: 92%
     .navbar
+        
+
         &-menu
             justify-content: space-around
             &__link    
@@ -174,15 +176,56 @@
         padding: 56px 0 0px 0        
 @media ( max-width: 767px)
     .navbar
-        &-user
-            display: none
-        &__search   
-            display: none 
+        &--mobile
+            &_fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                z-index: 99
+        &__search, &-user
+            &--mobile
+                &--hidden
+                    display: none        
+        &__search
+            margin-top: 8px
+            margin-bottom: 20px       
         &-bottom
-         display: none 
+            display: none
+            position: fixed
+            top: 78px
+            right: 0 
+            bottom: 0
+            left: 0
+            flex-direction: column
+            padding-top: 31px
+            &--visible
+                display: block 
+                overflow-y: auto
         &-top 
             &__menu-button
-                display: flex    
+                display: flex 
+        &-menu
+            flex-direction: column
+            &__item
+                margin-bottom: 20px 
+                &--mobile
+                    &--visible
+                        display: block      
+        &-user
+            
+            &--mobile
+                &--visible
+                    flex-direction: column
+
+    .user
+        &__name
+            &--visible
+                color: $light 
+                margin: 9px 0 0 0   
+    body
+        padding-top: 78px    
+
     .stars
         flex-basis: auto            
     .hotel
@@ -320,6 +363,15 @@
         width: 100%   
                                                                                              
 @media (max-width: 450px)  
+
+    .search
+        &__input
+            width: 245px
+    .navbar
+        &__search   
+            margin-left: 0
+                   
+
     .hotel
         padding-top: 0 
         padding-bottom: 42px
@@ -340,6 +392,8 @@
                     left: -2px
                 &--next    
                     right: -2px    
+    
+                            
     .logo 
         width: 100px    
     .container,
