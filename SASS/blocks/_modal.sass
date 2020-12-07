@@ -1,0 +1,81 @@
+.modal
+    &__overlay
+        background-color: rgba(0, 143, 223, 0.39)
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        z-index: 100
+        visibility: hidden
+        opacity: 0
+        &--active
+            visibility: visible
+            opacity: 1
+    &__dialog
+        position: fixed
+        top: 50%   
+        left: 50%
+        max-width: 478px
+        transform: translate(-50%, -50%) 
+        padding: 33px 88px
+        background-color: $dark
+        border-radius: 8px
+        color: $light
+        z-index: 101
+        visibility: hidden
+        opacity: 0
+        &--active
+            visibility: visible
+            opacity: 1
+        
+    &__close
+        position: absolute
+        right: 17px
+        top: 18px
+        text-decoration: none    
+        cursor: pointer
+    &__input
+        width: 100%
+        margin-bottom: 15px
+    &__message
+        min-height: 123px
+        width: 100%    
+    &__button
+        width: 160px 
+        max-width: 100%   
+        min-height: 50px
+        padding: 18px
+        
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        border-radius: 4px
+        background-color: $primary
+        color: $light
+        overflow: hidden     
+        white-space: nowrap                                  
+        text-overflow: ellipsis    
+    &__form
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap 
+        &--button-flex
+            display: flex
+            justify-content: space-between
+            width: 100%
+            align-items: center  
+            margin-top: 15px  
+    &__info
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px  
+        color: $footer-text-color         
+    &__title
+        &--modal
+            text-align: center
+            margin-bottom: 15px  
+            

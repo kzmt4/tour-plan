@@ -1,4 +1,5 @@
-var hotelSlider = new Swiper('.hotel-slider', {
+$(document).ready(function () {
+  var hotelSlider = new Swiper('.hotel-slider', {
     // Optional parameters
    
     loop: true,
@@ -47,3 +48,28 @@ menuButton.addEventListener("click", function (){
   .classList.toggle("navbar-bottom--visible");
 
 });
+var closeModalButton = $('.modal__close'); 
+var modalButton = $('[data-toggle="modal"]');
+  modalButton.on('click', openModal);
+  closeModalButton.on('click', closeModal);
+
+  
+    function closeModal(event){
+      event.preventDefault();
+      var modalOverlay = $(".modal__overlay");
+      var modalDialog = $(".modal__dialog");
+      modalOverlay.removeClass('modal__overlay--active');
+      modalDialog.removeClass('modal__dialog--active');
+    }
+
+    function openModal(){
+      console.log("Вызов модального окна");
+      var modalOverlay = $(".modal__overlay");
+      var modalDialog = $(".modal__dialog");
+      modalOverlay.addClass('modal__overlay--active');
+      modalDialog.addClass('modal__dialog--active');
+      
+    }
+});
+
+

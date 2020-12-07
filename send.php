@@ -17,19 +17,29 @@ $email = $_POST['email']  ;
 if ($name && $phone && $message){
 $title = "Новое обращение Best Tour Plan";
 $body = "
-<h2>Новое письмо</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение</b>$message
+<h2>New letter</h2>
+<b>Name:</b> $name<br>
+<b>Phone:</b> $phone<br><br>
+<b>Message:</b>$message
 ";
 }
-if ($email) {
-    $title = "Подписка на новости Best Tour Plan";
+ if ($email) {
+     $title = "Подписка на новости Best Tour Plan";
+     $body = "
+       <h2>Подписка на новости</h2>
+       <b>mail:</b> $email<br>
+     ";
+   }
+  if ($name && $phone && $message && $email){
+    $title = "Новое обращение Best Tour Plan";
     $body = "
-      <h2>Подписка на новости</h2>
-      <b>mail:</b> $email<br>
+    <h2>New letter</h2>
+    <b>Name: </b> $name<br>
+    <b>Phone:</b> $phone<br>
+    <b>Email: </b>$email<br>
+    <b>Message: </b>$message<br>
     ";
-  }
+    }  
 
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
