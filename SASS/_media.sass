@@ -78,7 +78,11 @@
             margin-bottom: 20px        
     .card
         width: 340px
-        height: 255px                    
+        height: 255px      
+    .footer
+        &__input
+            &-group
+                flex-basis: 100%                  
 @media ( max-width: 810px)
     
     .container
@@ -175,7 +179,8 @@
             
             
         &__input
-            flex-basis: 48%      
+            &-group
+                flex-basis: 48%      
         &__legal
             grid-column: span 2    
             margin-left: 0  
@@ -330,7 +335,8 @@
             order: -1
             margin: -8px 0 15px 0                
         &__input
-            flex-basis: 100%
+            &-group
+                flex-basis: 100%
         &__message
             width: 100% 
         &__icon

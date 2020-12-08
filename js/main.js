@@ -70,6 +70,31 @@ var modalButton = $('[data-toggle="modal"]');
       modalDialog.addClass('modal__dialog--active');
       
     }
+
+    //  обработка форм
+   $('.form').each(function(){
+    $(this).validate({
+      
+      
+      messages: {
+      
+      name: "Please specify your name",
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      },
+      phone: {
+        required:"Phone is required",
+        minlength: "Enter full number "
+        
+      }
+    }
+  });
+   })
+   $(".phoneInput").mask("+7 (999) 999-99-99");
+   
+    
+
 });
 
 

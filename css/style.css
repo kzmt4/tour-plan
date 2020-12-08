@@ -456,6 +456,10 @@ img {
   color: #BDBDBD;
 }
 
+.error {
+  color: red;
+}
+
 .toindex {
   width: 160px;
   max-width: 100%;
@@ -1051,7 +1055,6 @@ img {
   height: 55px;
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
@@ -1065,6 +1068,8 @@ img {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
 }
 
 .subscribe__input::-webkit-input-placeholder {
@@ -1093,6 +1098,8 @@ img {
   top: 0;
   height: 100%;
   border: none;
+  -webkit-border-radius: 0 4px 4px 0px;
+          border-radius: 0 4px 4px 0px;
   background-color: #EC1F46;
   color: #ffffff;
   width: 65px;
@@ -1105,6 +1112,11 @@ img {
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
   padding: 5px;
+}
+
+.subscribe label.error {
+  position: absolute;
+  top: 60px;
 }
 
 .reviews {
@@ -1562,6 +1574,10 @@ img {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -webkit-flex-basis: 47%;
       -ms-flex-preferred-size: 47%;
@@ -1750,12 +1766,13 @@ img {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   min-height: 123px;
   width: 100%;
+  margin-top: 15px;
 }
 
 .modal__button {
@@ -1822,7 +1839,6 @@ img {
 
 .modal__title--modal {
   text-align: center;
-  margin-bottom: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -1930,6 +1946,11 @@ img {
   .card {
     width: 340px;
     height: 255px;
+  }
+  .footer__input-group {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
   }
 }
 
@@ -2050,7 +2071,7 @@ img {
   .footer__icon-wrapper {
     margin-left: 8px;
   }
-  .footer__input {
+  .footer__input-group {
     -webkit-flex-basis: 48%;
         -ms-flex-preferred-size: 48%;
             flex-basis: 48%;
@@ -2303,7 +2324,7 @@ img {
             order: -1;
     margin: -8px 0 15px 0;
   }
-  .footer__input {
+  .footer__input-group {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;

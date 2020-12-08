@@ -40,7 +40,7 @@
     width: 355px
     height: 55px
     border-radius: 4px
-    overflow: hidden
+   
     &__input
         position: absolute
         width: 100%
@@ -52,6 +52,7 @@
         font-weight: 300
         font-size: 14px
         line-height: 18px  
+        border-radius: 4px
         &::placeholder
             color: $footer-text-color 
     &__button
@@ -60,6 +61,7 @@
         top: 0
         height: 100%
         border: none
+        border-radius: 0 4px 4px 0px
         background-color: $primary      
         color: $light
         width: 65px 
@@ -71,3 +73,7 @@
         white-space: nowrap                                  
         text-overflow: ellipsis
         padding: 5px
+
+.subscribe label.error 
+    position: absolute
+    top: 60px        
