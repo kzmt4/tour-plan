@@ -78,7 +78,10 @@ var modalButton = $('[data-toggle="modal"]');
       
       messages: {
       
-      name: "Please specify your name",
+      name: {
+        required:"Please specify your name",
+        minlength: "At least 2 characters"
+    },
       email: {
         required: "We need your email address to contact you",
         email: "Your email address must be in the format of name@domain.com"
@@ -92,6 +95,7 @@ var modalButton = $('[data-toggle="modal"]');
   });
    })
    $(".phoneInput").mask("+7 (999) 999-99-99");
+   AOS.init();
    
     
 
