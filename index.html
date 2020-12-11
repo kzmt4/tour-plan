@@ -6,7 +6,8 @@
     <title>Tour-Plan</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700&display=swap"
     
         rel="stylesheet">
@@ -23,7 +24,7 @@
                 </a>
                 <form action="#" class="search navbar__search navbar__search--mobile--hidden">
                     <input type="text" class="search__input" placeholder="Search Location">
-                    <button class="search__button">
+                    <button class="search__button button">
                         <img src="img/search.svg" alt="Icon: search" class="search__img">
                     </button>
                 </form>
@@ -44,7 +45,7 @@
         </div>
         <!-- /.container -->    
 
-        <div class="navbar-bottom navbar-bottom--visible">
+        <div class="navbar-bottom">
             <div class="container">
                 <ul class="navbar-menu">
                     <li class="navbar-menu__item navbar-menu__item--mobile--visible">
@@ -215,7 +216,7 @@
             </h2>
             <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
                 <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
-                <button class="subscribe__button">
+                <button class="subscribe__button button">
                     Send 
                 </button>
             </form>
@@ -340,14 +341,14 @@
                     of chamarel" class="card__img">
                     <h3 class="card__title">The curious corner <br> 
                         of chamarel</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button button">Book Now</button>
                 </div>
                 <div class="card activities__card" data-aos="fade-right">
                     <img src="img/activities-2.jpg" alt="Gymkhana club golf
                     course" class="card__img">
                     <h3 class="card__title">Gymkhana club golf <br>
                         course</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button button">Book Now</button>
                 </div>
                 <div class="card activities__card" data-aos="fade-right">
                     <img src="img/activities-3.jpg" alt="Tamarind falls hiking
@@ -356,16 +357,16 @@
                         trip - full day
                     </h3>    
                         
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button button">Book Now</button>
                     
                 </div>
                 <div class="card activities__card" data-aos="fade-right">
                     <img src="img/activities-4.jpg" alt="The blue marine discovery
                     quest" class="card__img">
-                    <h3 class="card__title">The blue marine discovery <br>
+                    <h3 class="card__title">The blue marine discovery<br>
                         quest
                     </h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button button">Book Now</button>
                 </div>
             </div>
 
@@ -373,7 +374,7 @@
     </section>
     <!-- /.activities -->
     <footer class="footer">
-        <div class="container">
+        <div class="container footer__container">
             <div class="footer-wrapper">
                <a href="index.html" class="logo footer__logo">
                     <img src="img/logo-footer.svg" alt="Logo: Beast Tour Plan" > 
@@ -409,13 +410,13 @@
                 <div class="footer__social-network">
                     <h3 class="footer__title footer__title--inline">Social Network</h3>
                     <div class="footer__social-links">
-                        <a href="#" class="footer__link">
+                        <a  target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/" class="footer__link">
                             <img class="" src="img/facebook.svg" alt="Icon: FaceBook">
                         </a>
-                        <a href="#" class="footer__link">
+                        <a  target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/" class="footer__link">
                             <img class="" src="img/instagram.svg" alt="Icon: Instagram">
                         </a>
-                        <a href="#" class="footer__link">
+                        <a  target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/" class="footer__link">
                             <img class="" src="img/youtube.svg" alt="Icon: Youtube">
                         </a>
                     </div>
@@ -478,13 +479,16 @@
                         Send us a message
                     </h3>
                         <form action="send.php" method="POST" class="footer__form form">
-                            <div class="footer__input-group">
-                               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="3"> 
+                            <div class="footer__input-wrapper">
+                               <div class="footer__input-group">
+                                    <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="3"> 
+                                </div>
+                            
+                                <div class="footer__input-group">
+                                    <input type="text" class="input footer__input phoneInput" placeholder="Phone Number*" name="phone" required minlength="18">
+                                </div> 
                             </div>
                             
-                            <div class="footer__input-group">
-                                <input type="text" class="input footer__input phoneInput" placeholder="Phone Number*" name="phone" required minlength="18">
-                            </div>
                             
                             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
                             <div class="footer__form footer__form--button-flex"> 
